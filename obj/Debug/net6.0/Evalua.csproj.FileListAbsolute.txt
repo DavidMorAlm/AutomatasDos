@@ -1,0 +1,15 @@
+/Users/davidmoralm/Documents/Evalua/bin/Debug/net6.0/Evalua
+/Users/davidmoralm/Documents/Evalua/bin/Debug/net6.0/Evalua.deps.json
+/Users/davidmoralm/Documents/Evalua/bin/Debug/net6.0/Evalua.runtimeconfig.json
+/Users/davidmoralm/Documents/Evalua/bin/Debug/net6.0/Evalua.dll
+/Users/davidmoralm/Documents/Evalua/bin/Debug/net6.0/ref/Evalua.dll
+/Users/davidmoralm/Documents/Evalua/bin/Debug/net6.0/Evalua.pdb
+/Users/davidmoralm/Documents/Evalua/obj/Debug/net6.0/Evalua.csproj.AssemblyReference.cache
+/Users/davidmoralm/Documents/Evalua/obj/Debug/net6.0/Evalua.GeneratedMSBuildEditorConfig.editorconfig
+/Users/davidmoralm/Documents/Evalua/obj/Debug/net6.0/Evalua.AssemblyInfoInputs.cache
+/Users/davidmoralm/Documents/Evalua/obj/Debug/net6.0/Evalua.AssemblyInfo.cs
+/Users/davidmoralm/Documents/Evalua/obj/Debug/net6.0/Evalua.csproj.CoreCompileInputs.cache
+/Users/davidmoralm/Documents/Evalua/obj/Debug/net6.0/Evalua.dll
+/Users/davidmoralm/Documents/Evalua/obj/Debug/net6.0/ref/Evalua.dll
+/Users/davidmoralm/Documents/Evalua/obj/Debug/net6.0/Evalua.pdb
+/Users/davidmoralm/Documents/Evalua/obj/Debug/net6.0/Evalua.genruntimeconfig.cache
