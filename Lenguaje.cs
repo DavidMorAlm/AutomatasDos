@@ -25,7 +25,7 @@ namespace Evalua
         }
         private void displayVariables()
         {
-            Log.WriteLine("\nVariables: ");
+            Log.WriteLine("\n\nVariables: ");
             foreach (Variable v in listaVariables)
             {
                 Log.WriteLine(v.getNombre() + " " + v.getTipo() + " " + v.getValor());
