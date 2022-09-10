@@ -175,7 +175,9 @@ namespace Evalua
             match("(");
             if (getClasificacion() == tipos.Cadena)
             {
-                Console.Write(getContenido());
+                string contenido = getContenido();
+                contenido = contenido.Remove(0, 1).Remove(contenido.Length - 2);
+                Console.Write(contenido);
                 match(tipos.Cadena);
             }
             else
