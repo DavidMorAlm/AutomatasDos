@@ -1,1 +1,3 @@
-
+#Ignorar las carpetas del proyecto bin y objeto
+bin
+obj
