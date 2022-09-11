@@ -29,7 +29,7 @@ namespace Evalua
             Log.WriteLine("\n\nVariables: ");
             foreach (Variable v in listaVariables)
             {
-                Log.WriteLine(v.getNombre() + " " + v.getTipo() + " " + v.getValor());
+                Log.WriteLine(v.getNombre() + " " + v.getTipo() + " " + v.getValue());
             }
         }
         private bool existeVariable(string name)
@@ -49,13 +49,23 @@ namespace Evalua
                 if (v.getNombre().Equals(name))
                 {
                     v.setValor(newValue);
+                    break;
                 }
             }
         }
         private float getValor(string nameVariable)
         {
             //Requerimiento 4.
-            return 0;
+            float value = 0;
+            foreach (Variable v in listaVariables)
+            {
+                if (v.getNombre().Equals(nameVariable))
+                {
+                    value = v.getValue();
+                    break;
+                }
+            }
+            return value;
         }
         //Programa -> Librerias? Variables? Main
         public void Programa()

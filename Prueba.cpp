@@ -12,5 +12,7 @@ void main()
     printf("\n\n\tRadio ");
     scanf("%d", &radio);
     pi = 3.14159265358979323846;
-    b++;
+    pi++;
+    a = a + 22;
+    b = 5;
 }

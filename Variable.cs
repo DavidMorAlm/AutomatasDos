@@ -20,7 +20,7 @@ namespace Evalua
         {
             this.value = value;
         }
-        public float getValor()
+        public float getValue()
         {
             return this.value;
         }
