@@ -12,7 +12,13 @@ void main()
     printf("\n\n\tRadio ");
     scanf("%d", &radio);
     pi = 3.14159265358979323846;
-    pi++;
-    a = a + 22;
-    b = 5;
+    b = 4;
+    area = pi * (radio * radio);
+    printf("\nArea = ");
+    printf(area);
+    printf("hola");
+    for (b = 10; b < 20; b++)
+    {
+        
+    }
 }

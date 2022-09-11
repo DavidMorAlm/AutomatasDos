@@ -229,6 +229,7 @@ namespace Evalua
                 throw new Error("\nError Semantico en linea " + linea + ". No existe la variable \"" + getContenido() + "\"", Log);
             string value = "" + Console.ReadLine();
             //Requerimiento 5. Modificar el valor de la variable.
+            modValor(getContenido(), float.Parse(value));
             match(tipos.Identificador);
             match(")");
             match(";");

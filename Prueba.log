@@ -1,17 +1,19 @@
 Archivo: prueba.cpp
-Compilado: El 11/09/2022 a las 01:46:17
+Compilado: El 11/09/2022 a las 02:04:56
 
 pi = 3.14159265358979323846 = 3.1415927
 
-a = a 22 + = 22
+b = 4 = 4
 
-b = 5 = 5
-
+area = pi radio radio * * = 314.15927
+area 
+b = 10 = 10
+b 20 
 
 Variables: 
-area Float 0
-radio Float 0
-pi Float 4.141593
+area Float 314.15927
+radio Float 10
+pi Float 3.1415927
 resultado Float 0
-a Int 22
-b Int 5
+a Int 0
+b Int 11
