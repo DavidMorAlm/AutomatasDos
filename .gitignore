@@ -1,4 +1,6 @@
 #Ignorar las carpetas del proyecto (bin y obj).
+bin
+obj
 bin/Debug/net6.0/Evalua.dll
 bin/Debug/net6.0/Evalua.pdb
 obj/Debug/net6.0/Evalua.dll
