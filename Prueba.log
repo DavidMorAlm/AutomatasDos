@@ -1,6 +1,14 @@
 Archivo: prueba.cpp
-Compilado: El 10/09/2022 a las 23:32:04
+Compilado: El 11/09/2022 a las 00:53:35
 
 pi = 3.14159265358979323846 = 3.1415927
 
-a = Error de Sintaxis en linea 15. Se espera =
+
+Variables: 
+area Float 0
+radio Float 0
+pi Float 0
+resultado Float 0
+a Int 0
+b Int 0
+c Int 0

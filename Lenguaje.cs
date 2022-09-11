@@ -159,17 +159,25 @@ namespace Evalua
             //Requerimiento 2. Si no existe la variable, se levanta la excepción.
             if (!existeVariable(getContenido()))
                 throw new Error("\nError Semantico en linea " + linea + ". No existe la variable \"" + getContenido() + "\"", Log);
-            Log.WriteLine();
-            Log.Write(getContenido() + " = ");
             string name = getContenido();
             match(tipos.Identificador);
-            match("=");
-            Expresion();
-            match(";");
-            float resultado = stackOperandos.Pop();
-            Log.Write("= " + resultado);
-            Log.WriteLine();
-            modValor(name, resultado);
+            if (getContenido() == "=")
+            {
+                Log.WriteLine();
+                Log.Write(name + " = ");
+                match("=");
+                Expresion();
+                match(";");
+                float resultado = stackOperandos.Pop();
+                Log.Write("= " + resultado);
+                Log.WriteLine();
+                modValor(name, resultado);
+            }
+            else
+            {
+                Incremento(name);
+                match(";");
+            }
         }
         // Printf -> printf (string | Expresion);
         private void Printf()
@@ -272,11 +280,29 @@ namespace Evalua
         // Incremento -> identificador ++ | --
         private void Incremento()
         {
-            string variable = getContenido();
             //Requerimiento 2. Si no existe la variable, se levanta la excepción.
             if (!existeVariable(getContenido()))
                 throw new Error("\nError Semantico en linea " + linea + ". No existe la variable \"" + getContenido() + "\"", Log);
+            string variable = getContenido();
             match(tipos.Identificador);
+            if (getClasificacion() == tipos.IncrementoTermino)
+            {
+                if (getContenido()[0] == '+')
+                {
+                    match("++");
+                    modValor(variable, getValor(variable) + 1);
+                }
+                else
+                {
+                    match("--");
+                    modValor(variable, getValor(variable) - 1);
+                }
+            }
+            else
+                match(tipos.IncrementoTermino);
+        }
+        private void Incremento(string variable)
+        {
             if (getClasificacion() == tipos.IncrementoTermino)
             {
                 if (getContenido()[0] == '+')
