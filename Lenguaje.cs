@@ -157,6 +157,8 @@ namespace Evalua
         private void Asignacion()
         {
             //Requerimiento 2. Si no existe la variable, se levanta la excepción.
+            if (!existeVariable(getContenido()))
+                throw new Error("\nError Semantico en linea " + linea + ". No existe la variable \"" + getContenido() + "\"", Log);
             Log.WriteLine();
             Log.Write(getContenido() + " = ");
             string name = getContenido();
@@ -198,6 +200,8 @@ namespace Evalua
             match(",");
             match("&");
             //Requerimiento 2. Si no existe la variable, se levanta la excepción.
+            if (!existeVariable(getContenido()))
+                throw new Error("\nError Semantico en linea " + linea + ". No existe la variable \"" + getContenido() + "\"", Log);
             string value = "" + Console.ReadLine();
             //Requerimiento 5. Modificar el valor de la variable.
             match(tipos.Identificador);
@@ -270,6 +274,8 @@ namespace Evalua
         {
             string variable = getContenido();
             //Requerimiento 2. Si no existe la variable, se levanta la excepción.
+            if (!existeVariable(getContenido()))
+                throw new Error("\nError Semantico en linea " + linea + ". No existe la variable \"" + getContenido() + "\"", Log);
             match(tipos.Identificador);
             if (getClasificacion() == tipos.IncrementoTermino)
             {
@@ -426,6 +432,8 @@ namespace Evalua
             else if (getClasificacion() == tipos.Identificador)
             {
                 //Requerimiento 2. Si no existe la variable, se levanta la excepción.
+                if (!existeVariable(getContenido()))
+                    throw new Error("\nError semantico en linea " + linea + ". No existe la variable \"" + getContenido() + "\"", Log);
                 Log.Write(getContenido() + " ");
                 stackOperandos.Push(getValor(getContenido()));
                 match(tipos.Identificador);
