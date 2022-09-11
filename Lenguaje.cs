@@ -44,6 +44,13 @@ namespace Evalua
         private void modValor(string name, float newValue)
         {
             //Requerimiento 3
+            foreach (Variable v in listaVariables)
+            {
+                if (v.getNombre().Equals(name))
+                {
+                    v.setValor(newValue);
+                }
+            }
         }
         private float getValor(string nameVariable)
         {

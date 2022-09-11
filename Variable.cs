@@ -16,7 +16,7 @@ namespace Evalua
             this.type = type;
             this.value = 0;
         }
-        protected void setValor(float value)
+        public void setValor(float value)
         {
             this.value = value;
         }
