@@ -4,6 +4,7 @@
 //Requerimiento 4: Obtener el valor de la variable cuando se requiera y programar el método getValor()
 //Requerimiento 5: Modificar el valor de la variable en el Scanf.
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace Evalua
 {
@@ -176,7 +177,7 @@ namespace Evalua
             if (getClasificacion() == tipos.Cadena)
             {
                 string contenido = getContenido();
-                contenido = contenido.Remove(0, 1).Remove(contenido.Length - 2);
+                contenido = Regex.Unescape(contenido.Remove(0, 1).Remove(contenido.Length - 2));
                 Console.Write(contenido);
                 match(tipos.Cadena);
             }
