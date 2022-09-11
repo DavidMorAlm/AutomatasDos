@@ -1,4 +1,3 @@
-#Ignorar las carpetas del proyecto bin y objeto
+#Ignorar las carpetas del proyecto (bin y obj).
 bin
 obj
-Prueba.log
